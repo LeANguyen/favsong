@@ -3,27 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		49498E8621291C3E009D0B28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49498E8521291C3E009D0B28 /* AppDelegate.swift */; };
-		49498E8821291C3E009D0B28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49498E8721291C3E009D0B28 /* ViewController.swift */; };
 		49498E8B21291C3E009D0B28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49498E8921291C3E009D0B28 /* Main.storyboard */; };
 		49498E8E21291C3E009D0B28 /* FavoriteSong.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49498E8C21291C3E009D0B28 /* FavoriteSong.xcdatamodeld */; };
 		49498E9021291C41009D0B28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49498E8F21291C41009D0B28 /* Assets.xcassets */; };
 		49498E9321291C41009D0B28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49498E9121291C41009D0B28 /* LaunchScreen.storyboard */; };
+		49498E9B212940E3009D0B28 /* FavSongsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49498E9A212940E3009D0B28 /* FavSongsTableViewController.swift */; };
+		49498E9D21294104009D0B28 /* AddSongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49498E9C21294104009D0B28 /* AddSongsViewController.swift */; };
+		49498EA32129A5B5009D0B28 /* songDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49498EA22129A5B5009D0B28 /* songDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49498E8221291C3E009D0B28 /* FavoriteSong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavoriteSong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49498E8521291C3E009D0B28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49498E8721291C3E009D0B28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		49498E8A21291C3E009D0B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49498E8D21291C3E009D0B28 /* FavoriteSong.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteSong.xcdatamodel; sourceTree = "<group>"; };
 		49498E8F21291C41009D0B28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49498E9221291C41009D0B28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49498E9421291C41009D0B28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49498E9A212940E3009D0B28 /* FavSongsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavSongsTableViewController.swift; sourceTree = "<group>"; };
+		49498E9C21294104009D0B28 /* AddSongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSongsViewController.swift; sourceTree = "<group>"; };
+		49498EA22129A5B5009D0B28 /* songDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = songDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				49498E8521291C3E009D0B28 /* AppDelegate.swift */,
-				49498E8721291C3E009D0B28 /* ViewController.swift */,
+				49498E9A212940E3009D0B28 /* FavSongsTableViewController.swift */,
+				49498E9C21294104009D0B28 /* AddSongsViewController.swift */,
+				49498EA22129A5B5009D0B28 /* songDetailViewController.swift */,
 				49498E8921291C3E009D0B28 /* Main.storyboard */,
 				49498E8F21291C41009D0B28 /* Assets.xcassets */,
 				49498E9121291C41009D0B28 /* LaunchScreen.storyboard */,
@@ -99,11 +105,12 @@
 				TargetAttributes = {
 					49498E8121291C3E009D0B28 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 49498E7D21291C3E009D0B28 /* Build configuration list for PBXProject "FavoriteSong" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49498E8821291C3E009D0B28 /* ViewController.swift in Sources */,
+				49498E9B212940E3009D0B28 /* FavSongsTableViewController.swift in Sources */,
+				49498E9D21294104009D0B28 /* AddSongsViewController.swift in Sources */,
 				49498E8621291C3E009D0B28 /* AppDelegate.swift in Sources */,
+				49498EA32129A5B5009D0B28 /* songDetailViewController.swift in Sources */,
 				49498E8E21291C3E009D0B28 /* FavoriteSong.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,8 +283,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -286,10 +294,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FavoriteSong/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.FavoriteSong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -303,10 +309,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FavoriteSong/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rmit.FavoriteSong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
